@@ -3,7 +3,7 @@ import "@testing-library/jest-dom";
 import WrapperFlexList from "./index";
 
 describe("WrapperFlexList testing", () => {
-  test("should have display flex", () => {
+  test("should have display flex", async () => {
     render(<WrapperFlexList />);
     const gridElement = screen.getByRole("grid");
     expect(gridElement).toBeInTheDocument;
